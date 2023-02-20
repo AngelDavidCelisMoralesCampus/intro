@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="#">
+        <table>
+            <tr>
+                <td><label for="txtNombre" class="etiqueta">Nombre</label></td>
+                <td width="90%"><input type="text" name="txtNombre" class="txt" placeholder="ingrese su nombre aqui" maxlength="6" required></td>
+            </tr>
+            <tr>
+                <td width="10%"><label for="txtApellido" class="etiqueta">Apellidos</label></td>
+                <td width="90%"><input type="text" name="txtNombre" class="txt" placeholder="ingrese su apellido aqui"></td>
+            </tr>
+        </table>
+        
+        <label for="">Estado Civil:</label> <br>
+        <input type="radio" name="optestadocivil" id="optestadocivil">Soltero(a) <br>
+        <input type="radio" name="optestadocivil" id="optestadocivil">Casado(a)
+        <br><br>
+        <label for="deportes">Deporte(s) que practica</label>
+        <br>
+        <!-- []Arreglo, se usa para guardar informacion-->
+        <input type="checkbox" name="deporte[]" id=""value="Baloncesto">Baloncesto
+        <input type="checkbox" name="deporte[]" id=""value="Futbol">Futbol
+        <input type="checkbox" name="deporte[]" id=""value="Tejo">Tejo
+        <br>
+        <label for="deporte">Contraseña</label>
+        <br>
+        <input type="password" name="pwdClave" id="pwdClave">
+        <input type="submit" value="Enviar">
+        <small>
+            <ul>
+                <li>Recuerde que la clave tiene que ser segura</li>
+                <li>Debe tener minimo 10 caracteres</li>
+            </ul>
+        </small>
+        
+    </form>
+</body>
+</html>
